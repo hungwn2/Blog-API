@@ -1,39 +1,42 @@
-RestFul API for a blog Platform, part of the Odin Project, built with Node.js , Express, Psql, Prism ORM, JWT, and Passport.js.
+# 📰 Blog API
 
--User registration & login with password hashing via bcrypt
+RESTful API for a blog platform, part of **The Odin Project**. Built with **Node.js**, **Express**, **PostgreSQL**, **Prisma ORM**, **JWT**, and **Passport.js**.
 
--JWT-based authentication 
+## ✨ Features
 
+- User registration & login with password hashing via `bcrypt`  
+- JWT-based authentication  
+- Prisma schema for type-safe database access  
+- PostgreSQL for data storage  
+- Organized REST API structure with modular routing  
 
-Prisma schema for type-safe database access
+> Inspired by the project: [Members Only](https://members-only-odin.onrender.com)
 
-PostgreSQL for  data storage
+---
 
-Organized REST API structure with modular routing
+## 🚀 To Use
 
-
-*Trying to get it to look like one of my other projects here: https://members-only-odin.onrender.com
-
-
-To use:
-
-#Clone the repository
+### 📁 Clone the repository
 
 git clone https://github.com/hungwn2/Blog-App.git
 cd Blog-App
 
-#Install dependencies
-
+###📦 Install dependencies
 npm install
-#Create and configure .env file
+
+###⚙️ Create and configure .env file
+
 DATABASE_URL="postgresql://<user>:<password>@<host>:<port>/<database>"
 JWT_SECRET="your_jwt_secret"
 PORT=3000
+Replace the placeholder values with your actual PostgreSQL credentials.
 
-#Set up the database
+###🛠️ Set up the database
+
 npx prisma migrate dev --name init
 npx prisma generate
 
-#Start the server
+###▶️ Start the server
 npm run dev
-The server should be running at http://localhost:3000.
+The server will be running at:
+🌐 http://localhost:3000
