@@ -21,22 +21,22 @@ RESTful API for a blog platform, part of **The Odin Project**. Built with **Node
 git clone https://github.com/hungwn2/Blog-App.git
 cd Blog-App
 
-###📦 Install dependencies
+### 📦 Install dependencies
 npm install
 
-###⚙️ Create and configure .env file
+### ⚙️ Create and configure .env file
 
 DATABASE_URL="postgresql://<user>:<password>@<host>:<port>/<database>"
 JWT_SECRET="your_jwt_secret"
 PORT=3000
 Replace the placeholder values with your actual PostgreSQL credentials.
 
-###🛠️ Set up the database
+### 🛠️ Set up the database
 
 npx prisma migrate dev --name init
 npx prisma generate
 
-###▶️ Start the server
+### ▶️ Start the server
 npm run dev
 The server will be running at:
 🌐 http://localhost:3000
