@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title || 'My Blog' %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="/">My Blog</a></h1>
+    <nav>
+      <a href="/posts">Posts</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Register</a>
+    </nav>
+  </header>
+  <main>
+    <%- body %>
+  </main>
+</body>
+</html>
